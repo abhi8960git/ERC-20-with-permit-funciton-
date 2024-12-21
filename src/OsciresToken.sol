@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.20;
+pragma solidity ^0.8.20;
 
-import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
-import '@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol';
-import '@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol';
-import '@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol';
-
+import { ERC20 } from 'lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol';
+import { ERC20Burnable } from 'lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Burnable.sol';
+import { ERC20Permit } from 'lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol';
+import { ERC20Votes } from 'lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Votes.sol';
+import {Nonces} from "lib/openzeppelin-contracts/contracts/utils/Nonces.sol";
 /**
- * @title LaikaAI
+ * @title Oscires
  * @dev Extends ERC20, ERC20Burnable, ERC20Permit, ERC20Votes contracts from OpenZeppelin.
  * @notice This contract implements a basic ERC20 token with burn, permit, and voting capabilities.
  */
